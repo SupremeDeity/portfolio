@@ -1,6 +1,5 @@
-import { RiJavascriptFill } from "react-icons/ri";
 import { CrystalCanvas } from "./Components/crystal";
-import { FaGithub, FaLinkedin, FaRust } from "react-icons/fa6";
+import { FaCodeCommit, FaGithub, FaLinkedin, FaRust } from "react-icons/fa6";
 import {
   BiLogoCPlusPlus,
   BiLogoJavascript,
@@ -125,9 +124,10 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <div className="text-white bg-black p-2 shadow shadow-emerald-400  grid grid-cols-2 w-full items-center font-bold">
-          <span className="text-xs uppercase text-primary drop-shadow-primary">Powered by Next.js</span>
-          <a href="https://github.com/supremedeity/portfolio" target="_blank"><SiGithub className="text-lg" /></a>
+        <div className="text-white bg-black p-2 shadow shadow-emerald-400  grid grid-cols-3 w-full items-center font-bold ">
+          <span className="text-xs  text-primary drop-shadow-primary uppercase">Powered by Next.js</span>
+          <a href="https://github.com/supremedeity/portfolio" target="_blank" className="w-max justify-self-center"><SiGithub className="text-lg" /></a>
+          <span className="justify-self-end text-xs flex gap-1 items-center"><FaCodeCommit /> {process.env.VERCEL_GIT_COMMIT_SHA?.slice(0, 7) || "DEV"}</span>
         </div>
       </div>
     </>
