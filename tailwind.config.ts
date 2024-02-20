@@ -19,7 +19,7 @@ const config: Config = {
           "linear-gradient(135deg, rgba(30,30,30,1) 0%, rgba(63,69,128,1) 25%, rgba(106,150,108,1) 50%, rgba(63,69,128,1) 75%, rgba(30,30,30,1) 100%)",
       },
       dropShadow(utils) {
-        return { primary: "0 0 24px #33E38E" };
+        return { primary: "0 0 28px #5DD49A" };
       },
     },
   },

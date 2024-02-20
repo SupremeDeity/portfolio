@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html className="bg-gradient-main" lang="en">
       <body className={plus_jakarta_sans.className}>{children}</body>
     </html>
   );
