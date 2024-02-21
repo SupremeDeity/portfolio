@@ -19,10 +19,10 @@ export default function Home() {
   return (
     <>
       <main className="h-dvh">
-        <div className="h-full bg-black/60 uppercase text-primary flex justify-evenly gap-x-48">
+        <div className="h-full max-h-full bg-black/60 uppercase text-primary flex flex-row justify-evenly gap-x-24 lg:gap-x-48">
           <div className="flex flex-col justify-center">
             <span className="font-light text-[24px]">Portfolio</span>
-            <span className="font-extrabold text-[64px] leading-[64px] w-max drop-shadow-primary">
+            <span className="font-extrabold text-[48px] leading-[48px] sm:text-[64px] sm:leading-[64px] w-max drop-shadow-primary">
               Muhammad
               <br />
               Mohsin
@@ -43,17 +43,17 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="w-80">
+          <div className="md:w-1/3 hidden md:block">
             <CrystalCanvas />
           </div>
         </div>
       </main>
       <div className="h-dvh shadow shadow-emerald-400">
         <div className="h-full bg-black/80 flex flex-col justify-evenly ">
-          <span className=" mt-12 uppercase drop-shadow-primary font-bold text-2xl text-primary self-center">
+          <span className="mt-12 uppercase drop-shadow-primary font-bold text-2xl text-primary self-center">
             About Me
           </span>
-          <div className="text-white text-lg mx-36 flex flex-col gap-10 h-full justify-center py-12">
+          <div className="text-white text-sm mx-8 md:text-lg lg:mx-36 flex flex-col gap-10 h-full justify-center py-12">
             <span>
               Hey there! I&apos;m a passionate undergraduate student majoring in
               software engineering, with a keen interest in crafting seamless
@@ -83,12 +83,12 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="h-dvh shadow shadow-emerald-400">
+      <div className="sm:h-dvh max-h-dvh shadow shadow-emerald-400">
         <div className="h-full bg-black/90 flex flex-col justify-around w-full">
-          <span className="mt-12 uppercase drop-shadow-primary font-bold text-2xl text-primary self-center">
+          <span className="mt-12 sm:mb-0 mb-12 uppercase drop-shadow-primary font-bold text-2xl text-primary self-center ">
             Skills
           </span>
-          <div className="m-auto grid grid-cols-4 grid-rows-4 gap-y-4 gap-x-12 text-3xl place-items-center">
+          <div className="mb-12 sm:m-auto grid grid-cols-4 grid-rows-4 gap-y-4 sm:gap-x-12 gap-x-6 text-3xl place-items-center">
             <div className="border border-slate-700 row-span-2 text-white bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
               <BiLogoJavascript className="fill-yellow-400" />
             </div>
