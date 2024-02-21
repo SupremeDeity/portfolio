@@ -48,7 +48,7 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <div className="h-dvh shadow shadow-emerald-400">
+      <div className="sm:h-dvh shadow shadow-emerald-400">
         <div className="h-full bg-black/80 flex flex-col justify-evenly ">
           <span className="mt-12 uppercase drop-shadow-primary font-bold text-2xl text-primary self-center">
             About Me
@@ -83,7 +83,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="sm:h-dvh max-h-dvh shadow shadow-emerald-400">
+      <div className="h-dvh shadow shadow-emerald-400 ">
         <div className="h-full bg-black/90 flex flex-col justify-around w-full">
           <span className="mt-12 sm:mb-0 mb-12 uppercase drop-shadow-primary font-bold text-2xl text-primary self-center ">
             Skills
