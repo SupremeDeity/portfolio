@@ -21,7 +21,7 @@ export default function Home() {
       <main className="h-dvh">
         <div className="h-full max-h-full bg-black/60 uppercase text-primary flex flex-row justify-evenly gap-x-24 lg:gap-x-48">
           <div className="flex flex-col justify-center">
-            <span className="font-light text-[24px]">Portfolio</span>
+            <span className="font-light text-[16px] sm:text-[24px]">Portfolio</span>
             <span className="font-extrabold text-[48px] leading-[48px] sm:text-[64px] sm:leading-[64px] w-max drop-shadow-primary">
               Muhammad
               <br />
@@ -83,7 +83,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="h-dvh shadow shadow-emerald-400 ">
+      <div className="sm:h-dvh shadow shadow-emerald-400 ">
         <div className="h-full bg-black/90 flex flex-col justify-around w-full">
           <span className="mt-12 sm:mb-0 mb-12 uppercase drop-shadow-primary font-bold text-2xl text-primary self-center ">
             Skills
@@ -125,7 +125,7 @@ export default function Home() {
       </div>
       <div>
         <div className="text-white bg-black p-2 shadow shadow-emerald-400  grid grid-cols-3 w-full items-center font-bold ">
-          <span className="text-xs  text-primary drop-shadow-primary uppercase">Powered by Next.js</span>
+          <span className="sm:text-xs text-[8px]  text-primary drop-shadow-primary uppercase">Powered by Next.js</span>
           <a href="https://github.com/supremedeity/portfolio" target="_blank" className="w-max justify-self-center"><SiGithub className="text-lg" /></a>
           <span className="justify-self-end text-xs flex gap-1 items-center"><FaCodeCommit /> {process.env.VERCEL_GIT_COMMIT_SHA?.slice(0, 7) || "DEV"}</span>
         </div>
