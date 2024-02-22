@@ -137,7 +137,7 @@ export default function Home() {
                 />
               </a>
               <div className="flex items-center justify-between">
-                <span className="text-lg uppercase font-bold">Urbane</span>
+                <span className="text-md sm:text-lg uppercase font-bold">Urbane</span>
                 <div className="flex leading-[12px] gap-x-1">
                   <span className="uppercase text-[10px] font-bold bg-primary text-black rounded-sm p-1">
                     React
@@ -166,19 +166,19 @@ export default function Home() {
                 height="629"
               />
               <div className="flex items-center justify-between">
-                <span className="text-lg uppercase font-bold">Siminventory</span>
+                <span className="text-md sm:text-lg uppercase font-bold">Siminventory</span>
                 <div className="flex leading-[12px] gap-x-1">
-                  <span className="uppercase text-[10px] font-bold bg-primary text-black rounded-sm p-1">
+                  <span className="uppercase text-[8px] sm:text-[10px] font-bold bg-primary text-black rounded-sm p-1">
                     React
                   </span>
-                  <span className="uppercase text-[10px] font-bold bg-primary text-black rounded-sm p-1">
+                  <span className="uppercase text-[8px] sm:text-[10px] font-bold bg-primary text-black rounded-sm p-1">
                     NextJs
                   </span>
-                  <span className="uppercase text-[10px] font-bold bg-primary text-black rounded-sm p-1">
+                  <span className="uppercase text-[8px] sm:text-[10px] font-bold bg-primary text-black rounded-sm p-1">
                     Prisma
                   </span>
                 </div>
-                <span className="text-xs uppercase">Private</span>                
+                <span className="text-xs uppercase font-bold">Private</span>                
               </div>
               <span className="text-sm text-gray-300">
                 A inventory management app for the future
