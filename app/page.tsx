@@ -7,13 +7,8 @@ import {
   BiLogoReact,
   BiLogoTypescript,
 } from "react-icons/bi";
-import {
-  SiDart,
-  SiFlutter,
-  SiGithub,
-  SiNextdotjs,
-  SiPrisma,
-} from "react-icons/si";
+import { SiDart, SiFlutter, SiNextdotjs, SiPrisma } from "react-icons/si";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -90,7 +85,7 @@ export default function Home() {
           <span className="mt-12 sm:mb-0 mb-12 uppercase drop-shadow-primary font-bold text-2xl text-primary self-center">
             Skills
           </span>
-          <div className="mb-12 sm:m-auto grid grid-cols-4 grid-rows-4 gap-y-4 sm:gap-x-12 gap-x-6 text-3xl place-items-center">
+          <div className="mb-12 sm:m-auto grid grid-cols-4 grid-rows-4 gap-y-4 sm:gap-x-12 gap-x-6 text-3xl place-items-center sm:mx-auto mx-4">
             <div className="border border-slate-700 row-span-2 ease-in duration-300 text-white bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
               <BiLogoJavascript className="fill-yellow-400" />
             </div>
@@ -125,6 +120,73 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="sm:h-dvh shadow shadow-emerald-400 snap-start">
+        <div className="h-full bg-black/80 flex flex-col justify-around w-full gap-y-12">
+          <span className="mt-12 sm:mb-0 mb-12 uppercase drop-shadow-primary font-bold text-2xl text-primary self-center">
+            PROJECTS
+          </span>
+          <div className="self-center text-white grid sm:grid-cols-2 sm:gap-x-16 gap-y-16 mb-16 mx-8">
+            <div className="">
+              <a href="https://urbane.supdeity.com" target="_blank">
+                <Image
+                  className="drop-shadow-primary rounded hover:brightness-75 w-[512px]"
+                  src="/urbane.png"
+                  alt="urbane preview"
+                  width="1356"
+                  height="629"
+                />
+              </a>
+              <div className="flex items-center justify-between">
+                <span className="text-lg uppercase font-bold">Urbane</span>
+                <div className="flex leading-[12px] gap-x-1">
+                  <span className="uppercase text-[10px] font-bold bg-primary text-black rounded-sm p-1">
+                    React
+                  </span>
+                  <span className="uppercase text-[10px] font-bold bg-primary text-black rounded-sm p-1">
+                    NextJs
+                  </span>
+                </div>
+                <a
+                  href="https://github.com/supremedeity/urbane"
+                  target="_blank"
+                >
+                  <FaGithub className="hover:fill-gray-300 text-lg transition-colors duration-100 ease-in" />
+                </a>
+              </div>
+              <span className="text-sm text-gray-300">
+                Modern dashboard developed using NextJS
+              </span>
+            </div>
+            <div className="">
+              <Image
+                className="drop-shadow-primary rounded hover:brightness-75 w-[512px]"
+                src="/siminventory.png"
+                alt="siminventory preview"
+                width="1356"
+                height="629"
+              />
+              <div className="flex items-center justify-between">
+                <span className="text-lg uppercase font-bold">Siminventory</span>
+                <div className="flex leading-[12px] gap-x-1">
+                  <span className="uppercase text-[10px] font-bold bg-primary text-black rounded-sm p-1">
+                    React
+                  </span>
+                  <span className="uppercase text-[10px] font-bold bg-primary text-black rounded-sm p-1">
+                    NextJs
+                  </span>
+                  <span className="uppercase text-[10px] font-bold bg-primary text-black rounded-sm p-1">
+                    Prisma
+                  </span>
+                </div>
+                <span className="text-xs uppercase">Private</span>                
+              </div>
+              <span className="text-sm text-gray-300">
+                A inventory management app for the future
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
       <div>
         <div className="text-white bg-black p-2 shadow shadow-emerald-400  grid grid-cols-3 w-full items-center font-bold snap-start">
           <span className="sm:text-xs text-[8px]  text-primary drop-shadow-primary uppercase">
@@ -135,7 +197,7 @@ export default function Home() {
             target="_blank"
             className="w-max justify-self-center"
           >
-            <SiGithub className="text-lg" />
+            <FaGithub className="text-lg hover:fill-gray-300 transition-colors duration-100 ease-in" />
           </a>
           <span className="justify-self-end text-xs flex gap-1 items-center">
             <FaCodeCommit />{" "}
