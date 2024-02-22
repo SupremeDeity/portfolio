@@ -188,7 +188,7 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <div className="text-white bg-black p-2 shadow shadow-emerald-400  grid grid-cols-3 w-full items-center font-bold snap-start">
+        <div className="text-white bg-black p-2 shadow shadow-emerald-400  grid grid-cols-3 w-full items-center font-bold snap-center">
           <span className="sm:text-xs text-[8px]  text-primary drop-shadow-primary uppercase">
             Powered by Next.js
           </span>
