@@ -17,11 +17,13 @@ import {
 
 export default function Home() {
   return (
-    <>
-      <main className="h-dvh">
-        <div className="h-full max-h-full bg-black/60 uppercase text-primary flex flex-row justify-evenly gap-x-24 lg:gap-x-48">
+    <div className="antialiased w-screen overflow-x-hidden overflow-y-scroll snap-mandatory snap-y h-screen">
+      <main className="h-dvh snap-center">
+        <div className="h-full max-h-full bg-black/60 uppercase text-primary flex flex-row justify-evenly gap-x-24 lg:gap-x-48 ">
           <div className="flex flex-col justify-center">
-            <span className="font-light text-[16px] sm:text-[24px]">Portfolio</span>
+            <span className="font-light text-[16px] sm:text-[24px]">
+              Portfolio
+            </span>
             <span className="font-extrabold text-[48px] leading-[48px] sm:text-[64px] sm:leading-[64px] w-max drop-shadow-primary">
               Muhammad
               <br />
@@ -29,7 +31,7 @@ export default function Home() {
             </span>
             <div className="flex gap-x-6">
               <a href="https://github.com/SupremeDeity" target="_blank">
-                <div className="flex items-center gap-4 border border-slate-700  text-white mt-6 text-xl bg-gray-800 w-max p-3 rounded hover:bg-gray-700 transition-all">
+                <div className="flex items-center gap-4 border border-slate-700 ease-in duration-300 text-white mt-6 text-xl bg-gray-800 w-max p-3 rounded hover:bg-gray-700 transition-all">
                   <FaGithub />
                 </div>
               </a>
@@ -37,7 +39,7 @@ export default function Home() {
                 href="https://www.linkedin.com/in/muhammad-mohsin-550945255/"
                 target="_blank"
               >
-                <div className="text-white mt-6 text-xl border border-slate-700 bg-gray-800 w-max p-3 rounded hover:bg-gray-700 transition-colors">
+                <div className="text-white mt-6 text-xl border border-slate-700 ease-in duration-300 bg-gray-800 w-max p-3 rounded hover:bg-gray-700 transition-colors">
                   <FaLinkedin />
                 </div>
               </a>
@@ -49,7 +51,7 @@ export default function Home() {
         </div>
       </main>
       <div className="sm:h-dvh shadow shadow-emerald-400">
-        <div className="h-full bg-black/80 flex flex-col justify-evenly ">
+        <div className="h-full bg-black/80 flex flex-col justify-evenly  snap-center">
           <span className="mt-12 uppercase drop-shadow-primary font-bold text-2xl text-primary self-center">
             About Me
           </span>
@@ -83,53 +85,64 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="sm:h-dvh shadow shadow-emerald-400 ">
+      <div className="sm:h-dvh shadow shadow-emerald-400">
         <div className="h-full bg-black/90 flex flex-col justify-around w-full">
           <span className="mt-12 sm:mb-0 mb-12 uppercase drop-shadow-primary font-bold text-2xl text-primary self-center ">
             Skills
           </span>
           <div className="mb-12 sm:m-auto grid grid-cols-4 grid-rows-4 gap-y-4 sm:gap-x-12 gap-x-6 text-3xl place-items-center">
-            <div className="border border-slate-700 row-span-2 text-white bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
+            <div className="border border-slate-700 row-span-2 ease-in duration-300 text-white bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
               <BiLogoJavascript className="fill-yellow-400" />
             </div>
-            <div className="border border-slate-700 text-white bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
+            <div className="border border-slate-700 text-white ease-in duration-300 bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
               <BiLogoTypescript className="fill-blue-400" />
             </div>
-            <div className="border border-slate-700 text-white bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
+            <div className="border border-slate-700 text-white ease-in duration-300 bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
               <FaRust className="fill-orange-400" />
             </div>
-            <div className="border border-slate-700 row-span-2 text-white bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
+            <div className="border border-slate-700 row-span-2 ease-in duration-300 text-white bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
               <BiLogoCPlusPlus className="fill-blue-400" />
             </div>
-            <div className="border border-slate-700 row-span-2 text-white bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
+            <div className="border border-slate-700 row-span-2 ease-in duration-300 text-white bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
               <BiLogoPython className="fill-gray-400" />
             </div>
-            <div className="border border-slate-700 row-span-2 text-white bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
+            <div className="border border-slate-700 row-span-2 ease-in duration-300 text-white bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
               <SiDart className="fill-blue-400" />
             </div>
 
-            <div className="border border-slate-700 col-start-3 row-start-4 text-white bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
+            <div className="border border-slate-700 col-start-3 ease-in duration-300 row-start-4 text-white bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
               <BiLogoReact className="fill-blue-400" />
             </div>
-            <div className="border border-slate-700 row-span-2 text-white bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
+            <div className="border border-slate-700 row-span-2 ease-in duration-300 text-white bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
               <SiNextdotjs />
             </div>
-            <div className="border border-slate-700 row-span-2  text-white bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
+            <div className="border border-slate-700 row-span-2 ease-in duration-300 text-white bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
               <SiPrisma className="fill-white rounded p-1 bg-blue-500" />
             </div>
-            <div className="border border-slate-700 col-start-2 row-start-4 text-white bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
+            <div className="border border-slate-700 col-start-2 ease-in duration-300 row-start-4 text-white bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
               <SiFlutter className="fill-blue-400" />
             </div>
           </div>
         </div>
       </div>
       <div>
-        <div className="text-white bg-black p-2 shadow shadow-emerald-400  grid grid-cols-3 w-full items-center font-bold ">
-          <span className="sm:text-xs text-[8px]  text-primary drop-shadow-primary uppercase">Powered by Next.js</span>
-          <a href="https://github.com/supremedeity/portfolio" target="_blank" className="w-max justify-self-center"><SiGithub className="text-lg" /></a>
-          <span className="justify-self-end text-xs flex gap-1 items-center"><FaCodeCommit /> {process.env.VERCEL_GIT_COMMIT_SHA?.slice(0, 7) || "DEV"}</span>
+        <div className="text-white bg-black p-2 shadow shadow-emerald-400  grid grid-cols-3 w-full items-center font-bold snap-start">
+          <span className="sm:text-xs text-[8px]  text-primary drop-shadow-primary uppercase">
+            Powered by Next.js
+          </span>
+          <a
+            href="https://github.com/supremedeity/portfolio"
+            target="_blank"
+            className="w-max justify-self-center"
+          >
+            <SiGithub className="text-lg" />
+          </a>
+          <span className="justify-self-end text-xs flex gap-1 items-center">
+            <FaCodeCommit />{" "}
+            {process.env.VERCEL_GIT_COMMIT_SHA?.slice(0, 7) || "DEV"}
+          </span>
         </div>
       </div>
-    </>
+    </div>
   );
 }
