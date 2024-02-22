@@ -51,7 +51,7 @@ export default function Home() {
         </div>
       </main>
       <div className="sm:h-dvh shadow shadow-emerald-400">
-        <div className="h-full bg-black/80 flex flex-col justify-evenly  snap-center">
+        <div className="h-full bg-black/80 flex flex-col justify-evenly  snap-start">
           <span className="mt-12 uppercase drop-shadow-primary font-bold text-2xl text-primary self-center">
             About Me
           </span>
@@ -85,9 +85,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="sm:h-dvh shadow shadow-emerald-400">
+      <div className="sm:h-dvh shadow shadow-emerald-400 snap-start">
         <div className="h-full bg-black/90 flex flex-col justify-around w-full">
-          <span className="mt-12 sm:mb-0 mb-12 uppercase drop-shadow-primary font-bold text-2xl text-primary self-center ">
+          <span className="mt-12 sm:mb-0 mb-12 uppercase drop-shadow-primary font-bold text-2xl text-primary self-center">
             Skills
           </span>
           <div className="mb-12 sm:m-auto grid grid-cols-4 grid-rows-4 gap-y-4 sm:gap-x-12 gap-x-6 text-3xl place-items-center">
