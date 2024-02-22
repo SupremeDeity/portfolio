@@ -17,7 +17,7 @@ import {
 
 export default function Home() {
   return (
-    <div className="antialiased w-screen overflow-x-hidden overflow-y-scroll snap-mandatory snap-y h-screen">
+    <div className="antialiased w-screen overflow-x-hidden overflow-y-scroll sm:snap-mandatory sm:snap-y h-screen">
       <main className="h-dvh snap-center">
         <div className="h-full max-h-full bg-black/60 uppercase text-primary flex flex-row justify-evenly gap-x-24 lg:gap-x-48 ">
           <div className="flex flex-col justify-center">
