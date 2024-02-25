@@ -1,5 +1,5 @@
 import { CrystalCanvas } from "./Components/crystal";
-import { FaCodeCommit, FaGithub, FaLinkedin, FaRust } from "react-icons/fa6";
+import { FaCaretRight, FaCodeCommit, FaGithub, FaRust } from "react-icons/fa6";
 import {
   BiLogoCPlusPlus,
   BiLogoJavascript,
@@ -26,8 +26,12 @@ export default function Home() {
             </span>
             <div className="flex gap-x-6">
               <a href="https://github.com/SupremeDeity" target="_blank">
-                <div className="flex items-center gap-4 border border-slate-700 ease-in duration-300 text-white mt-6 text-xl bg-gray-800 w-max p-3 rounded hover:bg-gray-700 transition-all">
+                <div className="flex items-center gap-2 border border-slate-700 ease-in duration-300 text-white mt-6 text-xl bg-gray-800 w-max p-3 rounded hover:bg-gray-700 transition-all">
                   <FaGithub />
+                  <span className="text-sm font-semibold">
+                    Github
+                  </span>
+                  <FaCaretRight />
                 </div>
               </a>
             </div>
