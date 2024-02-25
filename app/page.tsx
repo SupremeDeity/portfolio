@@ -30,14 +30,6 @@ export default function Home() {
                   <FaGithub />
                 </div>
               </a>
-              <a
-                href="https://www.linkedin.com/in/muhammad-mohsin-550945255/"
-                target="_blank"
-              >
-                <div className="text-white mt-6 text-xl border border-slate-700 ease-in duration-300 bg-gray-800 w-max p-3 rounded hover:bg-gray-700 transition-colors">
-                  <FaLinkedin />
-                </div>
-              </a>
             </div>
           </div>
           <div className="md:w-1/3 hidden md:block">
