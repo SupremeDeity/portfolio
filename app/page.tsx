@@ -1,5 +1,11 @@
 import { CrystalCanvas } from "./Components/crystal";
-import { FaCaretRight, FaCodeCommit, FaGithub, FaRust } from "react-icons/fa6";
+import {
+  FaAt,
+  FaCaretRight,
+  FaCodeCommit,
+  FaGithub,
+  FaRust,
+} from "react-icons/fa6";
 import {
   BiLogoCPlusPlus,
   BiLogoJavascript,
@@ -24,14 +30,20 @@ export default function Home() {
               <br />
               Mohsin
             </span>
-            <div className="flex gap-x-6">
+            <div className="flex gap-x-4">
               <a href="https://github.com/SupremeDeity" target="_blank">
                 <div className="flex items-center gap-2 border border-slate-700 ease-in duration-300 text-white mt-6 text-xl bg-gray-800 w-max p-3 rounded hover:bg-gray-700 transition-all">
                   <FaGithub />
-                  <span className="text-sm font-semibold">
-                    Github
-                  </span>
+                  <span className="text-sm font-semibold">Github</span>
                   <FaCaretRight />
+                </div>
+              </a>
+              <a href="mailto:mail@supdeity.com">
+                <div className="flex ease-in duration-300 hover:bg-gray-700 transition-all select-all items-center gap-2 border border-slate-700 text-white mt-6 text-xl bg-gray-800 w-max p-3 rounded">
+                  <FaAt />
+                  <span className="text-sm font-bold text-gray-300 lowercase">
+                    mail@supdeity.com
+                  </span>
                 </div>
               </a>
             </div>
@@ -116,7 +128,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="sm:h-dvh shadow shadow-emerald-400 snap-start">
+      <div className="sm:h-dvh shadow shadow-emerald-400 snap-start ">
         <div className="h-full bg-black/80 flex flex-col justify-around w-full gap-y-12">
           <span className="mt-12 sm:mb-0 mb-12 uppercase drop-shadow-primary font-bold text-2xl text-primary self-center">
             PROJECTS
@@ -133,15 +145,9 @@ export default function Home() {
                 />
               </a>
               <div className="flex items-center justify-between">
-                <span className="text-md sm:text-lg uppercase font-bold">Urbane</span>
-                <div className="flex leading-[12px] gap-x-1">
-                  <span className="uppercase text-[10px] font-bold bg-primary text-black rounded-sm p-1">
-                    React
-                  </span>
-                  <span className="uppercase text-[10px] font-bold bg-primary text-black rounded-sm p-1">
-                    NextJs
-                  </span>
-                </div>
+                <span className="text-md sm:text-lg uppercase font-bold">
+                  Urbane
+                </span>
                 <a
                   href="https://github.com/supremedeity/urbane"
                   target="_blank"
@@ -162,19 +168,12 @@ export default function Home() {
                 height="629"
               />
               <div className="flex items-center justify-between">
-                <span className="text-md sm:text-lg uppercase font-bold">Siminventory</span>
-                <div className="flex leading-[12px] gap-x-1">
-                  <span className="uppercase text-[8px] sm:text-[10px] font-bold bg-primary text-black rounded-sm p-1">
-                    React
-                  </span>
-                  <span className="uppercase text-[8px] sm:text-[10px] font-bold bg-primary text-black rounded-sm p-1">
-                    NextJs
-                  </span>
-                  <span className="uppercase text-[8px] sm:text-[10px] font-bold bg-primary text-black rounded-sm p-1">
-                    Prisma
-                  </span>
-                </div>
-                <span className="text-xs uppercase font-bold">Private</span>                
+                <span className="text-md sm:text-lg uppercase font-bold">
+                  Siminventory
+                </span>
+                <span className="text-xs uppercase font-bold text-gray-300">
+                  Private
+                </span>
               </div>
               <span className="text-sm text-gray-300">
                 A inventory management app for the future
