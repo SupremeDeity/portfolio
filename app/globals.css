@@ -1,3 +1,66 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background: linear-gradient(
+    120deg,
+    rgba(30, 30, 30, 1),
+    rgba(63, 69, 128, 1),
+    rgba(106, 150, 108, 1),
+    rgba(63, 69, 128, 1),
+    rgba(30, 30, 30, 1)
+  );
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+  height: 100dvh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 25% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 75% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated_box {
+  --borderWidth: 2.5px;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.animated_box:after {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #0dcf72, #3359ff, #37ef96, #07b39b);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
