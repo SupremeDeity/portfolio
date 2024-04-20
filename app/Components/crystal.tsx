@@ -61,7 +61,7 @@ export function CrystalCanvas() {
       <ambientLight intensity={0.1} />
       <Suspense fallback={null}>
         <CrystalModel />
-        <Environment preset="sunset" />
+        <Environment files={'autumn_field_puresky_1k.hdr'} />
       </Suspense>
     </Canvas>
   );
