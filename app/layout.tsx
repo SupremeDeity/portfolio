@@ -7,6 +7,7 @@ const plus_jakarta_sans = Plus_Jakarta_Sans({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Muhammad Mohsin | Portfolio",
   description: "Porfolio Website",
+  metadataBase: new URL("https://supdeity.com/"),
 };
 
 export default function RootLayout({
