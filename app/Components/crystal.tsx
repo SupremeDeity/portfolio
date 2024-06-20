@@ -14,6 +14,8 @@ import * as THREE from "three";
 import React from "react";
 import { Environment, useGLTF } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
+import PosterImage from "./poster.webp";
+import Image from "next/image";
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -57,14 +59,13 @@ useGLTF.preload("/rystal.glb");
 export function CrystalCanvas() {
   return (
     // @ts-ignore
-    <Canvas camera={{ position: [0, 10, 30] }} flat>
-      <ambientLight intensity={0.1} />
-
-      <CrystalModel />
-      <Suspense>
-        <Environment files={"autumn_field_puresky_1k.hdr"}/>
-      </Suspense>
-    </Canvas>
+    <Suspense fallback={<Image width={280} className="h-max" src={PosterImage} alt="rystal model" priority/>}>
+      <Canvas camera={{ position: [0, 0, 30] }} flat>
+      
+        <CrystalModel />
+        <Environment files={"moon_1k.hdr"} />
+      </Canvas>
+    </Suspense>
   );
 }
 

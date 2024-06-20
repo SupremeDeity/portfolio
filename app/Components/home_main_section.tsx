@@ -1,9 +1,10 @@
 import { FaGithub, FaCaretRight, FaAt } from "react-icons/fa6"
 import { CrystalCanvas } from "./crystal"
+import Script from "next/script"
 
 export function HomeMainSection () {
     return <main className="h-dvh snap-center">
-        <div className="h-full max-h-full bg-black/60 uppercase text-primary flex flex-row justify-evenly ">
+        <div className="h-full max-h-full bg-black/60 uppercase text-primary flex flex-row justify-evenly items-center ">
           <div className="flex flex-col justify-center">
             <span className="font-light text-[16px] sm:text-[24px]">
               Portfolio
@@ -31,7 +32,7 @@ export function HomeMainSection () {
               </a>
             </div>
           </div>
-          <div className="hidden md:block">
+          <div className="hidden md:flex md:justify-center md:max-w-80 lg:min-w-96 h-full items-center">
             <CrystalCanvas />
           </div>
         </div>
