@@ -7,15 +7,14 @@ Title: Сrystal
 */
 
 "use client";
-import { Suspense, useRef } from "react";
+import { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 
 import * as THREE from "three";
 import React from "react";
 import { Environment, useGLTF } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
-import PosterImage from "./poster.webp";
-import Image from "next/image";
+
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -58,14 +57,10 @@ useGLTF.preload("/rystal.glb");
 
 export function CrystalCanvas() {
   return (
-    // @ts-ignore
-    <Suspense fallback={<Image width={280} className="h-max" src={PosterImage} alt="rystal model" priority/>}>
-      <Canvas camera={{ position: [0, 0, 30] }} flat>
-      
-        <CrystalModel />
-        <Environment files={"moon_1k.hdr"} />
-      </Canvas>
-    </Suspense>
+    <Canvas camera={{ position: [0, 0, 30] }} flat>
+      <CrystalModel />
+      <Environment files={"moon_1k.hdr"} />
+    </Canvas>
   );
 }
 
