@@ -3,7 +3,7 @@ import { CrystalCanvas } from "./crystal"
 
 export function HomeMainSection () {
     return <main className="h-dvh snap-center">
-        <div className="h-full max-h-full bg-black/60 uppercase text-primary flex flex-row justify-evenly gap-x-24 lg:gap-x-48 ">
+        <div className="h-full max-h-full bg-black/60 uppercase text-primary flex flex-row justify-evenly ">
           <div className="flex flex-col justify-center">
             <span className="font-light text-[16px] sm:text-[24px]">
               Portfolio
@@ -31,7 +31,7 @@ export function HomeMainSection () {
               </a>
             </div>
           </div>
-          <div className="md:w-1/3 hidden md:block">
+          <div className="hidden md:block">
             <CrystalCanvas />
           </div>
         </div>

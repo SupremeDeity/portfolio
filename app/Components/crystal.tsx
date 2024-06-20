@@ -57,11 +57,12 @@ useGLTF.preload("/rystal.glb");
 export function CrystalCanvas() {
   return (
     // @ts-ignore
-    <Canvas camera={{ position: [0, 10, 30] }}>
+    <Canvas camera={{ position: [0, 10, 30] }} flat>
       <ambientLight intensity={0.1} />
-      <Suspense fallback={null}>
-        <CrystalModel />
-        <Environment files={'autumn_field_puresky_1k.hdr'} />
+
+      <CrystalModel />
+      <Suspense>
+        <Environment files={"autumn_field_puresky_1k.hdr"}/>
       </Suspense>
     </Canvas>
   );
