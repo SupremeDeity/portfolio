@@ -7,7 +7,7 @@ import PosterImage from "./poster.webp";
 export function HomeMainSection() {
   return (
     <main className="h-dvh snap-center">
-      <div className="h-full max-h-full bg-black/60 uppercase text-primary flex flex-row justify-evenly items-center ">
+      <div className="h-full max-h-full bg-black/40 uppercase text-primary flex flex-row justify-evenly items-center ">
         <div className="flex flex-col justify-center">
           <span className="font-light text-[16px] sm:text-[24px]">
             Portfolio
