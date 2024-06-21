@@ -19,16 +19,16 @@ export function HomeMainSection() {
           </span>
           <div className="flex gap-x-4">
             <a href="https://github.com/SupremeDeity" target="_blank">
-              <div className="flex items-center gap-2 text-white mt-6 text-xl bg-gray-800 w-max p-3 animated_box">
+              <div className="flex items-center gap-2 text-black mt-6 text-xl bg-gray-800 w-max p-3 animated_box">
                 <FaGithub />
                 <span className="text-sm font-semibold">Github</span>
                 <FaCaretRight />
               </div>
             </a>
             <a href="mailto:mail@supdeity.com">
-              <div className="flex select-all items-center gap-2 text-white mt-6 text-xl bg-gray-800 w-max p-3 animated_box before:h-[800%]">
+              <div className="flex select-all items-center gap-2 text-black mt-6 text-xl bg-gray-800 w-max p-3 animated_box before:h-[800%]">
                 <FaAt />
-                <span className="text-sm font-bold text-gray-300 lowercase">
+                <span className="text-sm font-bold text-black lowercase">
                   mail@supdeity.com
                 </span>
               </div>
