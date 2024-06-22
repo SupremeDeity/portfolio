@@ -11,7 +11,7 @@ export async function HomeStatsSection() {
 
   return (
     <div className="sm:h-dvh shadow shadow-emerald-400">
-      <div className="h-full max-h-max bg-black/60 flex flex-col justify-evenly snap-start">
+      <div className="h-full max-h-max bg-black/80 flex flex-col justify-evenly snap-start">
         <span className="mt-12 uppercase drop-shadow-primary font-bold text-2xl text-primary self-center">
           Stats
         </span>
