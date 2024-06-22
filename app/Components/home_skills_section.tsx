@@ -7,6 +7,7 @@ import {
 } from "react-icons/bi";
 import { FaRust } from "react-icons/fa6";
 import { SiDart, SiNextdotjs, SiPrisma, SiFlutter } from "react-icons/si";
+import { SkillBox } from "./SkillBox";
 
 export function HomeSkillsSection() {
   return (
@@ -16,39 +17,41 @@ export function HomeSkillsSection() {
           Skills
         </span>
         <div className="mb-12 sm:m-auto grid grid-cols-4 grid-rows-4 gap-y-4 sm:gap-x-12 gap-x-6 text-3xl place-items-center sm:mx-auto mx-4">
-          <div className="border border-slate-700 row-span-2 text-white bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
+          <SkillBox className="row-span-2">
             <BiLogoJavascript className="fill-yellow-400" />
-          </div>
-          <div className="border border-slate-700 text-white ease-in duration-300 bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
+          </SkillBox>
+          <SkillBox>
             <BiLogoTypescript className="fill-blue-400" />
-          </div>
-          <div className="border border-slate-700 text-white ease-in duration-300 bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
+          </SkillBox>
+          <SkillBox>
             <FaRust className="fill-orange-400" />
-          </div>
-          <div className="border border-slate-700 row-span-2 ease-in duration-300 text-white bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
+          </SkillBox>
+          <SkillBox className="row-span-2">
             <BiLogoCPlusPlus className="fill-blue-400" />
-          </div>
-          <div className="border border-slate-700 row-span-2 ease-in duration-300 text-white bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
+          </SkillBox>
+          <SkillBox className="row-span-2">
             <BiLogoPython className="fill-gray-400" />
-          </div>
-          <div className="border border-slate-700 row-span-2 ease-in duration-300 text-white bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
+          </SkillBox>
+          <SkillBox className="row-span-2">
             <SiDart className="fill-blue-400" />
-          </div>
+          </SkillBox>
 
-          <div className="border border-slate-700 col-start-3 ease-in duration-300 row-start-4 text-white bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
+          <SkillBox className="col-start-3 row-start-4 ">
             <BiLogoReact className="fill-blue-400" />
-          </div>
-          <div className="border border-slate-700 row-span-2 ease-in duration-300 text-white bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
-            <SiNextdotjs />
-          </div>
-          <div className="border border-slate-700 row-span-2 ease-in duration-300 text-white bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
+          </SkillBox>
+          <SkillBox className="row-span-2 text-white">
+            <SiNextdotjs className="" />
+          </SkillBox>
+          <SkillBox className="row-span-2">
             <SiPrisma className="fill-white rounded p-1 bg-blue-500" />
-          </div>
-          <div className="border border-slate-700 col-start-2 ease-in duration-300 row-start-4 text-white bg-gray-800 w-max p-4 rounded hover:bg-gray-700 transition-all">
+          </SkillBox>
+          <SkillBox className="col-start-2 row-start-4 ">
             <SiFlutter className="fill-blue-400" />
-          </div>
+          </SkillBox>
         </div>
       </div>
     </div>
   );
 }
+
+

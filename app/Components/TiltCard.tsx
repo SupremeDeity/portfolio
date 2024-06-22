@@ -65,7 +65,7 @@ export function TiltCard(props: React.HTMLAttributes<HTMLDivElement>) {
         transformStyle: "preserve-3d",
         transform,
       }}
-      className={"box " + props.className}
+      className={"box blurshadow p-2 " + props.className}
     >
       {props.children}
     </motion.div>

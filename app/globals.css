@@ -4,16 +4,6 @@
 
 body {
   background: black;
-  /* background: linear-gradient(
-    120deg,
-    rgba(30, 30, 30, 1),
-    rgba(63, 69, 128, 1),
-    rgba(106, 150, 108, 1),
-    rgba(63, 69, 128, 1),
-    rgba(30, 30, 30, 1)
-  );
-  background-size: 400% 400%;
-  animation: gradient 30s ease infinite; */
   height: 100dvh;
 }
 
@@ -72,14 +62,24 @@ body {
     linear-gradient(to bottom, #018445, #0a0a0a) border-box;
   border-radius: 8px;
   border: 2px solid transparent;
+}
+
+.blurshadow {
   -webkit-box-shadow: 0px 0px 26px -9px rgba(0, 255, 128, 0.4);
   -moz-box-shadow: 0px 0px 26px -9px rgba(0, 255, 128, 0.4);
   box-shadow: 0px 0px 26px -9px rgba(0, 255, 128, 0.4);
 }
 
+.blurshadow_large {
+  -webkit-box-shadow: 0px 0px 50px -9px rgba(0, 255, 128, 0.4);
+  -moz-box-shadow: 0px 0px 50px -9px rgba(0, 255, 128, 0.4);
+  box-shadow: 0px 0px 50px -9px rgba(0, 255, 128, 0.4);
+}
+
 .box > .header {
   /* background: linear-gradient(to bottom, #018445, #404342); */
   background: linear-gradient(to bottom, #018445, #123e3d);
+  border-radius: 4px;
 }
 
 .magicpattern {
