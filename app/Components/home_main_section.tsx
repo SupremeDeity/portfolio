@@ -9,7 +9,7 @@ export function HomeMainSection() {
   return (
     <main className="h-dvh snap-center">
       <div className="h-full max-h-full bg-black/55 uppercase text-primary ">
-        <div className="absolute top-8 select-none w-full text-center">
+        <div className="relative top-6 select-none w-full text-center">
           <div className="flex justify-center">
             <div className="border-2 border-primary p-2 rounded-2xl flex gap-x-2 items-center">
               <span className="relative flex h-[10px] w-[10px]">
@@ -22,7 +22,7 @@ export function HomeMainSection() {
             </div>
           </div>
         </div>
-        <div className="h-full flex flex-row justify-evenly items-center">
+        <div className="h-full flex flex-row justify-evenly items-center pb-6">
           <div className="flex flex-col justify-center">
             <span className="font-light text-[16px] sm:text-[24px]">
               Portfolio
