@@ -4,6 +4,7 @@ import { BiBook, BiGitPullRequest, BiSolidStar, BiUser } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
 import { VscIssues } from "react-icons/vsc";
 import { getGithubStats } from "../actions/github_stats";
+import { TiltCard } from "./TiltCard";
 
 export async function HomeStatsSection() {
   const stats = await getGithubStats();
@@ -15,7 +16,7 @@ export async function HomeStatsSection() {
           Stats
         </span>
         <div className="text-white h-full p-6 gap-4 grid grid-rows-2 grid-cols-3 md:grid-cols-3 md:grid-rows-2 lg:grid-cols-8 lg:grid-rows-2">
-          <Box className="row-span-2 col-span-2 flex flex-col justify-evenly items-center">
+          <TiltCard className="row-span-2 col-span-2 flex flex-col justify-evenly items-center">
             <div className="header w-full h-full text-center flex flex-col justify-center">
               <Image
                 className="w-16 h-16 mx-auto"
@@ -44,8 +45,8 @@ export async function HomeStatsSection() {
                 <BsGithub className="size-6 sm:size-8" />
               </Link>
             </div>
-          </Box>
-          <Box className="flex flex-col justify-center items-center gap-6 text-gray-400 text-xs sm:text-xl lg:col-span-2">
+          </TiltCard>
+          <TiltCard className="flex flex-col justify-center items-center gap-6 text-gray-400 text-xs sm:text-xl lg:col-span-2">
             <div>
               <BiUser className="size-8 mx-auto" />
               <span className="font-bold ">
@@ -53,8 +54,8 @@ export async function HomeStatsSection() {
               </span>
             </div>
             <span className="font-bold text-primary">{stats.followers.toString().padStart(2, "0")}</span>
-          </Box>
-          <Box className="flex flex-col justify-center items-center gap-6 text-gray-400 text-xs sm:text-xl lg:col-span-2">
+          </TiltCard>
+          <TiltCard className="flex flex-col justify-center items-center gap-6 text-gray-400 text-xs sm:text-xl lg:col-span-2">
             <div>
               <BiSolidStar className="size-8 mx-auto" />
               <span className="font-bold ">
@@ -62,8 +63,8 @@ export async function HomeStatsSection() {
               </span>
             </div>
             <span className="font-bold text-primary">{stats.totalStars.toString().padStart(2, "0")}</span>
-          </Box>
-          <Box className="flex flex-col justify-center items-center gap-6 text-gray-400 text-xs sm:text-xl lg:col-span-2">
+          </TiltCard>
+          <TiltCard className="flex flex-col justify-center items-center gap-6 text-gray-400 text-xs sm:text-xl lg:col-span-2">
             <div>
               <BiGitPullRequest className="size-8 mx-auto" />
               <span className="font-bold ">
@@ -71,8 +72,8 @@ export async function HomeStatsSection() {
               </span>
             </div>
             <span className="font-bold text-primary">{stats.totalPRs.toString().padStart(2, "0")}</span>
-          </Box>
-          <Box className="flex flex-col justify-center items-center gap-6 text-gray-400 text-xs sm:text-xl lg:col-start-4 lg:col-span-2">
+          </TiltCard>
+          <TiltCard className="flex flex-col justify-center items-center gap-6 text-gray-400 text-xs sm:text-xl lg:col-start-4 lg:col-span-2">
             <div>
               <VscIssues className="size-8 mx-auto" />
               <span className="font-bold ">
@@ -80,8 +81,8 @@ export async function HomeStatsSection() {
               </span>
             </div>
             <span className="font-bold text-primary">{stats.totalIssues.toString().padStart(2, "0")}</span>
-          </Box>
-          <Box className="flex flex-col justify-center p-4 sm:p-0 items-center gap-6 text-gray-400 text-xs sm:text-xl lg:col-start-6 lg:col-span-2">
+          </TiltCard>
+          <TiltCard className="flex flex-col justify-center p-4 sm:p-0 items-center gap-6 text-gray-400 text-xs sm:text-xl lg:col-start-6 lg:col-span-2">
             <div className="flex flex-col text-center">
               <BiBook className="size-6 sm:size-8 mx-auto" />
               <span className="font-bold text-center">
@@ -92,13 +93,9 @@ export async function HomeStatsSection() {
               </span>
             </div>
             <span className="font-bold text-primary">{stats.totalContributions.toString().padStart(2, "0")}</span>
-          </Box>
+          </TiltCard>
         </div>
       </div>
     </div>
   );
-}
-
-function Box(props: React.HTMLAttributes<HTMLDivElement>) {
-  return <div className={"box " + props.className}>{props.children}</div>;
 }

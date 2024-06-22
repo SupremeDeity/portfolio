@@ -72,11 +72,14 @@ body {
     linear-gradient(to bottom, #018445, #0a0a0a) border-box;
   border-radius: 8px;
   border: 2px solid transparent;
+  -webkit-box-shadow: 0px 0px 26px -9px rgba(0, 255, 128, 0.4);
+  -moz-box-shadow: 0px 0px 26px -9px rgba(0, 255, 128, 0.4);
+  box-shadow: 0px 0px 26px -9px rgba(0, 255, 128, 0.4);
 }
 
 .box > .header {
   /* background: linear-gradient(to bottom, #018445, #404342); */
-  background: linear-gradient(to bottom, #018445, #123E3D);
+  background: linear-gradient(to bottom, #018445, #123e3d);
 }
 
 .magicpattern {
