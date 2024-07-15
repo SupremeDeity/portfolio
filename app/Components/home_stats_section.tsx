@@ -46,10 +46,10 @@ export async function HomeStatsSection() {
               </Link>
             </div>
           </TiltCard>
-          <TiltCard className="flex flex-col justify-center items-center gap-6 text-gray-400 text-xs sm:text-xl lg:col-span-2">
+          <TiltCard className="text-center flex flex-col justify-center items-center gap-6 text-gray-400 text-xs sm:text-xl lg:col-span-2">
             <div>
               <BiUser className="size-8 mx-auto" />
-              <span className="font-bold ">
+              <span className="font-bold">
                 Total Followers<br /><br />
               </span>
             </div>

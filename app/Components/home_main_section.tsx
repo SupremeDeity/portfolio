@@ -32,7 +32,7 @@ export function HomeMainSection() {
               <br />
               Mohsin
             </span>
-            <div className="flex gap-x-4">
+            <div className="flex gap-4">
               <a href="https://github.com/SupremeDeity" target="_blank">
                 <div className="flex items-center gap-2 text-black mt-6 text-xl bg-gray-800 w-max p-3 animated_box">
                   <FaGithub />
