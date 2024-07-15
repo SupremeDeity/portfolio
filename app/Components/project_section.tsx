@@ -5,31 +5,11 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselApi,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import ClassNames from "embla-carousel-class-names";
-import { useCallback, useEffect, useState } from "react";
 
 export function ProjectsSection() {
-  const [api, setApi] = useState<CarouselApi>();
-  const [selectedIndex, setSelectedIndex] = useState(0);
-
- const onSelect = useCallback(() => {
-    if (!api) return
-    setSelectedIndex(api.selectedScrollSnap())
-  }, [api])
-
- useEffect(() => {
-  if (!api) return
-  onSelect()
-  api.on('select', onSelect)
-  return () => {
-    api.off('select', onSelect)
-  }
-}, [api, onSelect])
-
-  
   return (
     <div className="shadow shadow-emerald-400 snap-start h-full">
       <div className="h-full bg-black/80 flex flex-col items-center justify-center w-full">
@@ -38,153 +18,110 @@ export function ProjectsSection() {
         </span>
         <div className="text-white overflow-hidden">
           <Carousel
-            setApi={setApi}
             opts={{
               align: "center",
               loop: true,
             }}
             plugins={[
               Autoplay({
+                jump: false,
                 delay: 2000,
                 stopOnFocusIn: true,
                 stopOnMouseEnter: true,
                 stopOnInteraction: false,
               }),
-              ClassNames({ inView: "brightness-50", snapped: "embla__snapped", draggable: "", dragging: ""})
+              ClassNames({
+                inView: "brightness-50",
+                snapped: "embla__snapped",
+                draggable: "",
+                dragging: "",
+              }),
             ]}
           >
-            <CarouselContent className="-ml-12">
-              <CarouselItem  className="pl-12 max-w-[800px] min-w-[60%] shrink ">
-                <a href="https://urbane.supdeity.com" target="_blank">
-                  <Image
-                    className="rounded transition-transform"
-                    src="/urbane.webp"
-                    alt="urbane preview"
-                    width="1356"
-                    height="629"
-                  />
-                </a>
-                <div className="flex items-center justify-between">
-                  <span className="text-md text-gray-300 sm:text-lg uppercase font-bold">
-                    Urbane
-                  </span>
-                  <a
-                    href="https://github.com/supremedeity/urbane"
-                    target="_blank"
-                  >
-                    <FaGithub className="hover:fill-gray-300 text-lg transition-colors duration-100 ease-in" />
-                  </a>
-                </div>
-                <span className="text-sm text-primary font-semibold">
-                  Modern dashboard developed using NextJS
-                </span>
-              </CarouselItem>
-              <CarouselItem  className="pl-12 max-w-[800px] min-w-[60%] shrink ">
-                <a href="https://devtools.supdeity.com" target="_blank">
-                  <Image
-                    className="rounded transition-transform"
-                    src="/devtools.webp"
-                    alt="devtools preview"
-                    width="1356"
-                    height="629"
-                  />
-                </a>
-                <div className="flex items-center justify-between">
-                  <span className="text-md text-gray-300 sm:text-lg uppercase font-bold">
-                    DevTools
-                  </span>
-                  <a
-                    href="https://github.com/supremedeity/devtools"
-                    target="_blank"
-                  >
-                    <FaGithub className="hover:fill-gray-300 text-lg transition-colors duration-100 ease-in" />
-                  </a>
-                </div>
-                <span className="text-sm text-primary font-semibold">
-                  Useful tools of all kinds for developers and students.
-                </span>
-              </CarouselItem>
-              <CarouselItem className="pl-12 max-w-[800px] min-w-[60%] shrink">
-                <div>
-                  <Image
-                    className="rounded"
-                    src="/siminventory.webp"
-                    alt="siminventory preview"
-                    width="1356"
-                    height="629"
-                  />
-                  <div className="flex items-center justify-between">
-                    <span className="text-md text-gray-300 sm:text-lg uppercase font-bold">
-                      Siminventory
-                    </span>
-                    <span className="flex text-sm items-center gap-x-1 uppercase font-bold text-gray-300">
-                      <FaLock />
-                      Private
-                    </span>
-                  </div>
-                  <span className="text-sm text-primary font-semibold">
-                    A inventory management app for the future
-                  </span>
-                </div>
-              </CarouselItem>
-              <CarouselItem className="pl-12 max-w-[800px] min-w-[60%] shrink">
-                <div>
-                  <a href="https://maestro.supdeity.com" target="_blank">
-                    <Image
-                      className="rounded"
-                      src="/maestro.webp"
-                      alt="maestro preview"
-                      width="1356"
-                      height="629"
-                    />
-                  </a>
-                  <div className="flex items-center justify-between">
-                    <span className="text-md text-gray-300 sm:text-lg uppercase font-bold">
-                      Maestro
-                    </span>
-                    <a
-                      href="https://github.com/supremedeity/maestro"
-                      target="_blank"
-                    >
-                      <FaGithub className="hover:fill-gray-300 text-lg transition-colors duration-100 ease-in" />
-                    </a>
-                  </div>
-                  <span className="text-sm text-primary font-semibold">
-                    A Stylish E-Commerce site template
-                  </span>
-                </div>
-              </CarouselItem>
-              <CarouselItem  className="pl-12 max-w-[800px] min-w-[60%] shrink">
-                <div>
-                  <a href="https://screenok.vercel.app" target="_blank">
-                    <Image
-                      className="rounded"
-                      src="/screenok.webp"
-                      alt="screenok preview"
-                      width="1356"
-                      height="629"
-                    />
-                  </a>
-                  <div className="flex items-center justify-between">
-                    <span className="text-md text-gray-300 sm:text-lg uppercase font-bold">
-                      Screenok
-                    </span>
-                    <a
-                      href="https://github.com/supremedeity/screenok"
-                      target="_blank"
-                    >
-                      <FaGithub className="hover:fill-gray-300 text-lg transition-colors duration-100 ease-in" />
-                    </a>
-                  </div>
-                  <span className="text-sm text-primary font-semibold ">
-                    Generate Mockups from your screenshots
-                  </span>
-                </div>
-              </CarouselItem>
+            <CarouselContent className="sm:-ml-12 -ml-4">
+              <Item
+                name="Urbane"
+                src="https://urbane.supdeity.com"
+                imageSrc="/urbane.webp"
+                description="Modern dashboard developed using NextJS"
+                githubSrc="https://github.com/SupremeDeity/urbane"
+              />
+              <Item
+                name="DevTools"
+                src="https://devtools.supdeity.com"
+                imageSrc="/devtools.webp"
+                description="Useful tools of all kinds for developers and students"
+                githubSrc="https://github.com/supremedeity/devtools"
+              />
+              <Item
+                name="Siminventory"
+                imageSrc="/siminventory.webp"
+                description="A inventory management app for the future"
+              />
+              <Item
+                name="Maestro"
+                src="https://maestro.supdeity.com"
+                imageSrc="/maestro.webp"
+                description="A Stylish E-Commerce site template"
+                githubSrc="https://github.com/supremedeity/maestro"
+              />
+              <Item
+                name="Screenok"
+                src="https://screenok.supdeity.com"
+                imageSrc="/screenok.webp"
+                description="Generate Mockups from your screenshots"
+                githubSrc="https://github.com/supremedeity/screenok"
+              />
             </CarouselContent>
           </Carousel>
         </div>
       </div>
     </div>
   );
+
+  function Item({
+    imageSrc,
+    name,
+    description,
+    githubSrc,
+    src,
+  }: {
+    imageSrc: string;
+    name: string;
+    description: string;
+    githubSrc?: string;
+    src?: string;
+  }) {
+    return (
+      <CarouselItem className="sm:pl-12 max-w-[800px] min-w-[50%] sm:min-w-[60%] shrink ">
+        <a href={src} target="_blank">
+          <Image
+            className="rounded"
+            src={imageSrc}
+            alt={`${name} preview`}
+            width="1356"
+            height="629"
+          />
+        </a>
+        <div className="flex items-center justify-between">
+          <span className="text-md text-gray-300 sm:text-lg uppercase font-bold">
+            {name}
+          </span>
+          {githubSrc ? (
+            <a href={githubSrc} target="_blank">
+              <FaGithub className="hover:fill-gray-300 text-lg transition-colors duration-100 ease-in" />
+            </a>
+          ) : (
+            <span className="flex text-sm items-center gap-x-1 uppercase font-bold text-gray-300">
+              <FaLock />
+              Private
+            </span>
+          )}
+        </div>
+        <span className="text-sm text-primary font-semibold">
+          {description}
+        </span>
+      </CarouselItem>
+    );
+  }
 }
