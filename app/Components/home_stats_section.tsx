@@ -19,7 +19,7 @@ export async function HomeStatsSection() {
           <TiltCard className="row-span-2 col-span-2 flex flex-col justify-evenly items-center">
             <div className="header w-full h-full text-center flex flex-col justify-center">
               <Image
-                className="w-16 h-16 mx-auto"
+                className="w-16 h-16 mx-auto rounded-full"
                 width={64}
                 height={64}
                 src={
