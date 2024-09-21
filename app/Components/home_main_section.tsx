@@ -3,7 +3,6 @@ import { CrystalCanvas } from "./crystal";
 import { Suspense } from "react";
 import Image from "next/image";
 import PosterImage from "./poster.webp";
-import Icon from "../icon2.png";
 
 export function HomeMainSection() {
   return (

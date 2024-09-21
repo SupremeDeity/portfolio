@@ -40,6 +40,13 @@ export function ProjectsSection() {
           >
             <CarouselContent className="sm:-ml-12 -ml-4">
               <Item
+                name="Kaku"
+                src="https://kaku.supdeity.com"
+                imageSrc="/kaku.webp"
+                description="Modern dashboard developed using NextJS"
+                githubSrc="https://github.com/SupremeDeity/urbane"
+              />
+              <Item
                 name="Urbane"
                 src="https://urbane.supdeity.com"
                 imageSrc="/urbane.webp"
