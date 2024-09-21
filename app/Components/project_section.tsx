@@ -43,8 +43,8 @@ export function ProjectsSection() {
                 name="Kaku"
                 src="https://kaku.supdeity.com"
                 imageSrc="/kaku.webp"
-                description="Modern dashboard developed using NextJS"
-                githubSrc="https://github.com/SupremeDeity/urbane"
+                description="A learning venture of creating a diagraming tool with hand-drawn visuals"
+                githubSrc="https://github.com/SupremeDeity/kaku"
               />
               <Item
                 name="Urbane"
