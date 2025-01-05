@@ -11,9 +11,9 @@ import ClassNames from "embla-carousel-class-names";
 
 export function ProjectsSection() {
   return (
-    <div className="shadow shadow-emerald-400 snap-start h-full">
+    <div className="snap-start h-full">
       <div className="h-full bg-black/80 flex flex-col items-center justify-center w-full">
-        <span className="mt-12 mb-12 uppercase drop-shadow-primary font-bold text-2xl text-primary self-center">
+        <span className="mt-12 mb-12 uppercase drop-shadow-primary font-bold text-4xl text-primary self-center">
           PROJECTS
         </span>
         <div className="text-white overflow-hidden">
@@ -38,7 +38,7 @@ export function ProjectsSection() {
               }),
             ]}
           >
-            <CarouselContent className="sm:-ml-12 -ml-4">
+            <CarouselContent className="max-w-screen-sm sm:max-w-[100%]">
               <Item
                 name="Kaku"
                 src="https://kaku.supdeity.com"

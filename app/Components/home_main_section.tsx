@@ -10,12 +10,12 @@ export function HomeMainSection() {
       <div className="h-full max-h-full bg-black/55 uppercase text-primary ">
         <div className="relative top-6 select-none w-full text-center">
           <div className="flex justify-center">
-            <div className="border-2 border-primary p-2 rounded-2xl flex gap-x-2 items-center">
+            <div className="bg-emerald-950/75 border border-emerald-800 py-1 px-2 rounded-2xl flex gap-x-2 items-center shadow-2xl">
               <span className="relative flex h-[10px] w-[10px]">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-200 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-[10px] w-[10px] bg-primary"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-300 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-[10px] w-[10px] bg-emerald-400"></span>
               </span>
-              <span className=" normal-case text-xs font-bold">
+              <span className="normal-case text-xs font-bold text-emerald-400">
                 Available for Hire
               </span>
             </div>
@@ -49,11 +49,11 @@ export function HomeMainSection() {
               </a>
             </div>
             <a className="max-w-min" href="/Mohsin_Resume.pdf" target="_blank">
-                <div className="flex items-center gap-2 text-black mt-6 text-xl bg-gray-800 w-max p-3 animated_box">
-                  <FaDownload />
-                  <span className="text-sm font-bold">Download Resume</span>
-                </div>
-              </a>
+              <div className="flex items-center gap-2 text-black mt-6 text-xl bg-gray-800 w-max p-3 animated_box">
+                <FaDownload />
+                <span className="text-sm font-bold">Download Resume</span>
+              </div>
+            </a>
           </div>
           <div className="hidden md:flex md:justify-center md:max-w-80 lg:min-w-96 h-full items-center">
             <Suspense

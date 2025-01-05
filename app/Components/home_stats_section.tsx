@@ -10,9 +10,9 @@ export async function HomeStatsSection() {
   const stats = await getGithubStats();
 
   return (
-    <div className="sm:h-dvh shadow shadow-emerald-400">
-      <div className="h-full max-h-max bg-black/80 flex flex-col justify-evenly snap-start">
-        <span className="mt-12 uppercase drop-shadow-primary font-bold text-2xl text-primary self-center">
+    <div className="sm:h-dvh">
+      <div className="h-full max-h-max bg-black/55 flex flex-col justify-evenly snap-start">
+        <span className="mt-12 uppercase drop-shadow-primary font-bold text-4xl text-primary self-center">
           Stats
         </span>
         <div className="text-white h-full p-6 gap-4 grid grid-rows-2 grid-cols-3 md:grid-cols-3 md:grid-rows-2 lg:grid-cols-8 lg:grid-rows-2">
