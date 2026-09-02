@@ -1,5 +1,6 @@
 import { Tag } from "./Tag";
 import { SectionHeading } from "./SectionHeading";
+import { SeamWave } from "./SeamWave";
 
 const tones = ["blue", "sage", "coral", "lavender"] as const;
 
@@ -32,7 +33,8 @@ const categories = [
 
 export function Skills() {
   return (
-    <section id="skills" className="bg-sage-50/70 py-16">
+    <section id="skills" className="relative bg-sage-50/70 py-16">
+      <SeamWave />
       <div className="mx-auto max-w-5xl px-6">
         <SectionHeading tone="sage">Skills</SectionHeading>
 

@@ -1,8 +1,10 @@
 import { FaGithub, FaLinkedin, FaAt } from "react-icons/fa6";
+import { SeamWave } from "./SeamWave";
 
 export function Footer() {
   return (
-    <footer className="border-t border-border">
+    <footer className="relative">
+      <SeamWave />
       <div className="mx-auto flex max-w-5xl flex-col gap-6 px-6 py-12 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="font-display text-base font-semibold text-ink">

@@ -53,7 +53,7 @@ After a direction round (nautical/harbor-signal worlds, then a bolder round of f
 
 ## Evidence on Hand
 
-- Current resume names five projects: **BookMyTransfer**, **ClinicFind**, **Divine Jewelry**, **NextGenCareer**, and **Kaku** (kaku.supdeity.mv, github.com/supremedeity/kaku — note the `.mv` domain, not `.com` as currently linked on-site). Only Kaku overlaps with the six currently on the site (Kaku, Urbane, DevTools, Siminventory, Maestro, Screenok); the other five on-site projects are absent from the current resume and the four new resume projects aren't on the site at all. **This is the central reconciliation the coming makeover must resolve — do not assume either list is authoritative without asking.**
+- Current resume names five projects: **BookMyTransfer**, **ClinicFind**, **Divine Jewelry**, **NextGenCareer**, and **Kaku** (kaku.supdeity.com, github.com/supremedeity/kaku — note the `.mv` domain, not `.com` as currently linked on-site). Only Kaku overlaps with the six currently on the site (Kaku, Urbane, DevTools, Siminventory, Maestro, Screenok); the other five on-site projects are absent from the current resume and the four new resume projects aren't on the site at all. **This is the central reconciliation the coming makeover must resolve — do not assume either list is authoritative without asking.**
 - BookMyTransfer, ClinicFind, and Divine Jewelry are client/production work — confirm with the user before the makeover whether any are under NDA or otherwise can't be shown publicly (client work often is), since none currently has a public screenshot/URL on hand.
 - No testimonials, case studies, or press — do not fabricate any.
 

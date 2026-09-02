@@ -1,9 +1,11 @@
 import { Tag } from "./Tag";
 import { SectionHeading } from "./SectionHeading";
+import { SeamWave } from "./SeamWave";
 
 export function Education() {
   return (
-    <section id="education" className="bg-lavender-50/60 py-16">
+    <section id="education" className="relative bg-lavender-50/60 py-16">
+      <SeamWave />
       <div className="mx-auto max-w-5xl px-6">
         <SectionHeading tone="lavender">Education</SectionHeading>
 

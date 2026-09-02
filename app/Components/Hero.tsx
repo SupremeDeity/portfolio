@@ -1,6 +1,7 @@
 import { FaGithub, FaLinkedin, FaAt } from "react-icons/fa6";
 import { Tag } from "./Tag";
 import { Squiggle } from "./Squiggle";
+import { Button } from "./Button";
 
 export function Hero() {
   return (
@@ -31,30 +32,27 @@ export function Hero() {
         Maldives, alongside multi-tenant SaaS work for healthcare and retail.
       </p>
 
-      <div className="mt-8 flex flex-wrap items-center gap-3">
-        <a
-          href="mailto:mail@supdeity.com"
-          className="inline-flex items-center gap-2 rounded-full bg-blue-500 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-blue-700"
-        >
+      <div className="mt-8 flex flex-wrap items-center gap-4">
+        <Button href="mailto:mail@supdeity.com">
           <FaAt aria-hidden />
           mail@supdeity.com
-        </a>
-        <a
+        </Button>
+        <Button
           href="https://github.com/SupremeDeity"
           target="_blank"
-          className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-5 py-2.5 text-sm font-medium text-ink transition-colors hover:border-ink-muted"
+          variant="outline"
         >
           <FaGithub aria-hidden />
           GitHub
-        </a>
-        <a
+        </Button>
+        <Button
           href="https://linkedin.com/in/muhammad-mohsin-sh"
           target="_blank"
-          className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-5 py-2.5 text-sm font-medium text-ink transition-colors hover:border-ink-muted"
+          variant="outline"
         >
           <FaLinkedin aria-hidden />
           LinkedIn
-        </a>
+        </Button>
       </div>
     </section>
   );

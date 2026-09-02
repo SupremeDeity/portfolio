@@ -1,5 +1,6 @@
 import { Tag } from "./Tag";
 import { SectionHeading } from "./SectionHeading";
+import { SeamWave } from "./SeamWave";
 
 const roles = [
   {
@@ -31,7 +32,8 @@ const roles = [
 
 export function Experience() {
   return (
-    <section id="experience" className="bg-blue-50/70 py-16">
+    <section id="experience" className="relative bg-blue-50/70 py-16">
+      <SeamWave />
       <div className="mx-auto max-w-5xl px-6">
         <SectionHeading tone="blue">Experience</SectionHeading>
 

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FaAt } from "react-icons/fa6";
+import { Button } from "./Button";
 
 const links = [
   { href: "#experience", label: "Experience" },
@@ -32,13 +33,14 @@ export function Nav() {
             </a>
           ))}
         </nav>
-        <a
+        <Button
           href="mailto:mail@supdeity.com"
-          className="inline-flex items-center gap-2 rounded-full bg-blue-500 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-700"
+          tilt={false}
+          className="px-4 py-2"
         >
           <FaAt className="text-xs" aria-hidden />
           Say hello
-        </a>
+        </Button>
       </div>
     </header>
   );
