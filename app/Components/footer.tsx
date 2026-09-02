@@ -1,24 +1,43 @@
-import { FaCodeCommit, FaGithub } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaAt } from "react-icons/fa6";
 
 export function Footer() {
   return (
-    <div>
-      <div className="text-white bg-black p-2 shadow shadow-emerald-400  grid grid-cols-3 w-full items-center font-bold snap-center">
-        <span className="sm:text-xs text-[8px]  text-primary drop-shadow-primary uppercase">
-          Powered by Next.js
-        </span>
-        <a
-          href="https://github.com/supremedeity/portfolio"
-          target="_blank"
-          className="w-max justify-self-center"
-        >
-          <FaGithub className="text-lg hover:fill-gray-300 transition-colors duration-100 ease-in" />
-        </a>
-        <span className="justify-self-end text-xs flex gap-1 items-center">
-          <FaCodeCommit />{" "}
-          {process.env.VERCEL_GIT_COMMIT_SHA?.slice(0, 7) || "DEV"}
-        </span>
+    <footer className="border-t border-border">
+      <div className="mx-auto flex max-w-5xl flex-col gap-6 px-6 py-12 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <p className="font-display text-base font-semibold text-ink">
+            Let&apos;s connect
+          </p>
+          <p className="mt-1 text-sm text-ink-muted">
+            Open to full-time and internship roles.
+          </p>
+        </div>
+        <div className="flex flex-wrap items-center gap-4 text-sm font-medium text-ink-muted">
+          <a
+            href="mailto:mail@supdeity.com"
+            className="inline-flex items-center gap-2 transition-colors hover:text-ink"
+          >
+            <FaAt aria-hidden />
+            mail@supdeity.com
+          </a>
+          <a
+            href="https://github.com/SupremeDeity"
+            target="_blank"
+            className="inline-flex items-center gap-2 transition-colors hover:text-ink"
+          >
+            <FaGithub aria-hidden />
+            GitHub
+          </a>
+          <a
+            href="https://linkedin.com/in/muhammad-mohsin-sh"
+            target="_blank"
+            className="inline-flex items-center gap-2 transition-colors hover:text-ink"
+          >
+            <FaLinkedin aria-hidden />
+            LinkedIn
+          </a>
+        </div>
       </div>
-    </div>
+    </footer>
   );
 }

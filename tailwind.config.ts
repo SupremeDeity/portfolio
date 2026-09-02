@@ -9,17 +9,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#0DCF72",
+        cream: "#FBF2E6",
+        surface: "#FFFCF6",
+        border: "#EAD9C0",
+        ink: "#2B2318",
+        "ink-muted": "#7C6E58",
+        sage: { 50: "#E4F1E1", 500: "#74B183", 700: "#2E5B3B" },
+        blue: { 50: "#E3EDFB", 500: "#6FA0DE", 700: "#28518C" },
+        coral: { 50: "#FCE9DA", 500: "#EC9A67", 700: "#93502A" },
+        lavender: { 50: "#EFE7FA", 500: "#AD8EDB", 700: "#5C3D90" },
       },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "gradient-main":
-          "linear-gradient(135deg, rgba(30,30,30,1) 0%, rgba(63,69,128,1) 25%, rgba(106,150,108,1) 50%, rgba(63,69,128,1) 75%, rgba(30,30,30,1) 100%)",
-      },
-      dropShadow(utils) {
-        return { primary: "0 0 28px #5DD49A" };
+      fontFamily: {
+        display: ["var(--font-display)"],
+        body: ["var(--font-body)"],
       },
     },
   },
